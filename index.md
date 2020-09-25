@@ -1,12 +1,29 @@
-## Welcome to GitHub Pages
+# Visualização da Informação - Fernando Hannaka
+
+Este trabalho faz parte do curso de Visualização da Informação do EMAp da FGV.
 
 You can use the [editor on GitHub](https://github.com/fehann/VisEMAp2020/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Aula 2 - Criar a visualização do Quarteto de Ascombe
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+A ferramenta escolhida para criar as visualizações foi o Altair em Python. Eu tenho mais fluência na utilização do R, usei uma vez o Altair porém foi baseado em um código template, portanto escolhi esta ferramenta para testar fazer visualizações do zero e aumentar minhas habilidades em programação.
+
+### Dados
+
+Os dados foram obtidos do [site da Wikipedia](https://pt.wikipedia.org/wiki/Quarteto_de_Anscombe) e transformados no [formato em csv](https://github.com/fehann/VisEMAp2020/blob/master/Anscombe.csv).
+
+### Visualização padrão
+
+O primeiro passo foi recriar a visualização padrão do quarteto. Uma dificuldade maior nesta parte foi encontrar a maneira de plotar a linha de regressão pois em um primeiro momento não funcionou. Após várias buscas encontrei a solução que é a utilização de layers para plotar um gráfico sobre o outro.
+
+<img 
+    src="Viz1.svg" 
+    alt="Quarteto de Anscombe"
+ />
+
+
 
 ```markdown
 Syntax highlighted code block
