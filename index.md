@@ -2,10 +2,6 @@
 
 Este trabalho faz parte do curso de Visualização da Informação do EMAp da FGV.
 
-You can use the [editor on GitHub](https://github.com/fehann/VisEMAp2020/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ## Aula 2 - Criar a visualização do Quarteto de Ascombe
 
 A ferramenta escolhida para criar as visualizações foi o Altair em Python. Eu tenho mais fluência na utilização do R, usei uma vez o Altair porém foi baseado em um código template, portanto escolhi esta ferramenta para testar fazer visualizações do zero e aumentar minhas habilidades em programação.
@@ -23,24 +19,54 @@ O primeiro passo foi recriar a visualização padrão do quarteto. Uma dificulda
     alt="Quarteto de Anscombe"
  />
 
+### Visualização interativa
 
+Esta visualização interativa permite selecionar cada categoria separadamente e visualizar como os pontos diferem em relação aos outros conjuntos de dados. Foi adicionado também gráficos auxiliares nos eixos x e y mostrando o posicionamento dos pontos em cada eixo por categoria. É interessante que pela visualização fica claro que em quase todas as categorias, exceto a IV, todos os pontos estão na mesma coordenada x, o que difere é o posicionamento no eixo y onde as suas variações resultam na linha de regressão linear ser as mesmas para todas.
+
+<img 
+    src="Viz2.svg" 
+    alt="Quarteto de Anscombe"
+ />
+
+Segue abaixo o código para esta visualização interativa, 
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# Configure the options common to all layers
+brush = alt.selection_single(fields=['Category'])
+base = alt.Chart(df).add_selection(brush)
 
-- Bulleted
-- List
+# Configure the points
+points = base.mark_circle(size=60).encode(
+    x=alt.X('x', title=''),
+    y=alt.Y('y', title=''),
+    color=alt.condition(brush, 'Category', alt.value('lightgrey'))
+)
 
-1. Numbered
-2. List
+# Configure the ticks
+tick_axis = alt.Axis(labels=False, domain=False, ticks=False)
 
-**Bold** and _Italic_ and `Code` text
+x_ticks = base.mark_tick().encode(
+    alt.X('x', axis=tick_axis),
+    alt.Y('Category', title='', axis=tick_axis),
+    color=alt.condition(brush, 'Category', alt.value('lightgrey'))
+)
 
-[Link](url) and ![Image](src)
+y_ticks = base.mark_tick().encode(
+    alt.X('Category', title='', axis=tick_axis),
+    alt.Y('y', axis=tick_axis),
+    color=alt.condition(brush, 'Category', alt.value('lightgrey'))
+)
+
+# Build the chart
+finalcombo = y_ticks | (points & x_ticks)
+
+finalcombo.properties(
+    title='Quarteto de Anscombe'
+).configure_title(
+    fontSize=23,
+    anchor='middle'
+)
 
 ```
 
