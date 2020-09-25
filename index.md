@@ -2,7 +2,7 @@
 
 Este trabalho faz parte do curso de Visualização da Informação do EMAp da FGV.
 
-## Aula 2 - Criar a visualização do Quarteto de Ascombe
+## Aula 2 - Criar a visualização do Quarteto de Anscombe
 
 A ferramenta escolhida para criar as visualizações foi o Altair em Python. Eu tenho mais fluência na utilização do R, usei uma vez o Altair porém foi baseado em um código template, portanto escolhi esta ferramenta para testar fazer visualizações do zero e aumentar minhas habilidades em programação.
 
@@ -27,8 +27,10 @@ Esta visualização interativa permite selecionar cada categoria separadamente e
     src="Viz2.svg" 
     alt="Quarteto de Anscombe"
  />
+ 
+ [Clique para abrir no Vega](https://vega.github.io/editor/#/url/vega-lite/N4KABGBEDGD2B2AzAlgc0gLjKCFIDdkBTAd02xgQBdl4BXWOgZwHVkATKgC3IBYAGfgBooceDXqMmACSJouVcgGZBAXyHhckGlQA2RcsEgBDeNC6wATuUgBbDu32QRkRNQDKyAF4GsAJiVVTXVNSC4xaGNFLABtTQgcXDxbY0sAaxsaaAyNJLwiM1h2WnQsRLzRWF0rQ3iKyvhimgRa+rztAE8AB18oeFh7eGNdZzq212JddhsAYSiiVCsO0bakyCYifWhm+BsNraorfgBGADZIMbyQ1ah8YbpeyF15KlRLImXLiGv6yAAPVqrTo9Gz9QbDFZA4x-ZBMQyQdgDYy0ciIYYbFy6YwAI02cKwaN0GKgWTS+LAhI2P3GKE20ywkDmVAWS0h4x0TgZFza1PayzKXy0VG6jwAjnRTDoosh8AZclCYeSjIiUiiCeiiJicXjURqXKTyZSiLyKhM6TZPjzLiaoPsiNtkC0yutNvbDpYTudncKQQymCUnC5aVNyTFGfNFpZlgBdVRBJK88pafARKLkOJtJOmlLpeE+x7QZCWaCB23eXqnfg2tYFODFeClbCCtZwarWAU3FsIJqO3YdztrfOgga0CHygd4YP0qBMllRtkTl0HXt7V3bI5nbkT6u-O66B42Z6oBRvD5bm47tYA70imziyXIKjS2XOKBTmwA-WPzlQSCXrT8hQQ4Mve4iPs+cpvpM06QMsX56I8f7NmA-5Lm6K79jcaHrh6m43r6ZYNqWZohum4bMpGMbxqs1EVDuWbtDmGQMqSC6mrWRQlICWGtjUmGdpQjSPhhTYTkKt4MmCo4jOOi7vgys6UWxAl2g6Tq2mu7qeuenb-mse4HgyR4nu8lq6bJ4zXqJi7AVAoFSjQL4WQqsLwiqyJ9hSepQFiuJErqRKaiSyDZIaGp6Vo8lQACyHfM5pqAQx7ISX0I5DDJsVaNCrnOu5apeYFWp+WFhXBaFAVUvFvxReRc5wZleAcohmW0fUqGqTs3FAh1G5ekBKXrAGkEkewoa1UpsbIa1CaXNGdTUdG8oIlExjwkMtiPOwK0ALQABy7X4u1KNi7B+McACs51KEQu2IOdxzHEdACc9rQMcxgAOy7dil1+H+S1NTYACKEqWMyhxgOwRBgAAgvATBwLYuKQpAAAkCNcEQKQ2AoVBdEwGAAPSE7KqDGAAdKgj5cHQ2Lk46hMY1jxgkwsxjbc8zIk7w5O7eTxzkwAVkwLRLVtT4bFQSp1MtT57QdR0nWdl3Xbd92PUoL3QG9n3fb96aXEYimsgyACSr7-OQxzCFAgF8-wvA2kbEYm1A5suFZu0uIBpzk0951O+NruQO70VW0o3vkB95PnbtgfG-OZsW1ZT2R1gfO7cc8cu4nbvJ1bxxp2AfNKIEznOxRweh5bWDHLwRdPX7pzZ5Xuch-nWCnEX0d+I75dB231dWfXtt8OTfjN-3CeAe3HtW34RfW7zfeGwPM9D1HRc8wdLd1TYG9YOdRfneTpxx1POfrwfYDWw3-MrxUFd72b19e6P6f37vSkvx3N8R+-xdyYfQfnkJ+383bX1TgAvmH0PpfyrtfB6d8J7wMHogkesFyB8yzhfVuV9f5dwAb7Y4ZdV7T33tfDBgElD81QfguetcF4AMbiQuhFDf4fW7uPSeZDL7sIYWAI+ACebALYS-RBNtMFYGjrwHhj814UNfkXX2sCxEQMQf-KRN8-BAJAUkMBCDIFcIemokOptEGFwAdHTOpjzHoKLhnPRuADFoOvoQrRvt+Dn14XgxRv8qHkBPprWx5jf7HCYVo7BAdcHP3URw5R5NeB+BCdfIRWiT4fVIfI8hZsABqv834eJjt47JfC8kFOPkAuRoCFHlIEYUwC0cPo4J8bEkO+T6kOOXrYjpYd05dN4HAmJ4D2kVKseTB2PSxnpPHtE1pIzTa9JrjfKBWjwkxymZ0gBJ9zrVP0bUt2SzPZcKei00pvi6l9OLgk3aT1WpzW+CAVQQA/view)
 
-Segue abaixo o código para esta visualização interativa, 
+Segue abaixo o código para esta visualização interativa. Foi necessário usar o *selection* para permitir selecionar cada categoria separadamento, assim como o eixo *tick_axis* para plotar os gráficos auxiliares nos eixos x e y.
 
 ```markdown
 
@@ -70,14 +72,8 @@ finalcombo.properties(
 
 ```
 
-[Open the Chart in the Vega Editor](https://vega.github.io/editor/#/url/vega-lite/N4Igxg9gdgZglgcxALlANzgUwO4tJKAFzigFcJSBnAdTgBNCALFAFgAY2AacaYsiygAlMiRoRQBmDgF9p3OgENCCvCCgKAtphQhFygLQAOQwCZDEgEZ0TARgCsdiZkMw7Nm+YCcmMGBsKAdkMLBxMQORANBQAnAGtVQgBPAAdtZHA4aLAAG21uSjgALzSANjYIzChIOhIkVB5siGiElLS1CA0SBWyQbnhMbLodAGElTAQmxPDuQggIbOJklABtUCTUnSgOrp6+rEGRsYnoqbk11p0AR1IFIjhlYjQ8kH6D9IAPafON9Ovb4gecCevRe+yG6VOAF1uJ96us2n87oDgXsBuCQJ8IlM4RdfjckUogc9XujThFKAMfMRoKoKbkwLNomw7CUWj8QAUoAhciCSZQViBRoRxpMQJDZNwACSUMCMTBRHRiQjJSjIAD0aqeCAUADoEPdGKQLDq4BA1TK5VFNeMFPpsvdMJqWDrDDqbDqAFaUGnyJQKCmEfn1PS24xmSzWeyOZyudxeHx+QLBUIrUBCkUnHQASRBsJsXBA2NdbBYZ0FR1F6RzMJQhm42JKOs8djL6eO2JA1YxKBsEnrKACOrshlbFczVdzKE8-eQrsMNlHwvb2cnyHcM9dEgki4zHa7eZYM88TZKO+XE5ryBKM8HJlLnDTY73q8PhdYOpMp4f5aXlc7q5sEwZ3zF170fX9x3-S8AhnZ1TDPP99xQOwZzsHUShHb820QpC1wLbFjxsMCf13bNcLrN9ZzdYjsMgrNcN7DcdQCGinzI1dp0o10AgCBC6IYmwjw-L9wNIqsGNfIs3T4vdcOvSjG17GT2MvSTJGkrC2PEgCgMowjt00iDZNXGDKNvESSPPTtcJQyjnRY5TxIY-CBx1FgLNo2TyJnRseMc6yGL7SjAOY1ijLI3DOOxQd3H8+iBJvF0F0MsSAoAtSqMMMLUvi1d5IbHU2Ew0SrNy1TUJ1CRPDi+idKY+watw0yCpYExGtXWzsTQgIDJKxCADVVwogrhziwbL2G5DmI8rTO3G7tZ0SgJkr6uj5thSbMuy0r1trJiWF4lKdqGxKSzGk7KLQkwWyOgaAKinsTCHc6JoqlkXoWzbB08FbLLu16FJdarxWkIA/view)
+Para ver o código completo [clique aqui para ver o Jupyter notebook](https://github.com/fehann/VisEMAp2020/blob/master/Aula_2_Anscombe_Fernando.ipynb).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+---
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fehann/VisEMAp2020/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Atualizado em: 25/09/2020
